@@ -1,5 +1,6 @@
-package com.example.foodapp.model
+package com.example.foodapp.feature.model
 
+import com.google.gson.annotations.SerializedName
 import java.io.Serializable
 
 data class Food (
@@ -10,5 +11,7 @@ data class Food (
     val isFavorite: Boolean,
     val imageUrl: String,
     val rating: Float,
-    val description: String,):Serializable
+    val description: String,
+    @SerializedName("restaurantName") val restaurant: String
+):Serializable
 

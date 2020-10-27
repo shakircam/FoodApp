@@ -1,4 +1,4 @@
-package com.example.foodapp.model
+package com.example.foodapp.feature.model
 
 import com.example.foodapp.network.FoodApiInterface
 import com.example.foodapp.network.RetrofitClient

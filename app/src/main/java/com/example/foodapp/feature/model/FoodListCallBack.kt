@@ -1,4 +1,4 @@
-package com.example.foodapp.model
+package com.example.foodapp.feature.model
 
 interface FoodListCallBack {
     fun onSuccess(foodList: MutableList<Food>)
