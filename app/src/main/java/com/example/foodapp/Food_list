@@ -9,7 +9,7 @@
   },
   {
         "id": 101,
-        "name": "Fish",
+        "name": "Rupchada",
         "price": 250,
         "discount": 10,
         "isFavorite": true,
