@@ -2,11 +2,8 @@ package com.example.foodapp.feature.view
 
 import android.os.Bundle
 import android.view.View
-import android.widget.ProgressBar
-import android.widget.Toast
 import androidx.appcompat.widget.Toolbar
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.example.foodapp.R
 import com.example.foodapp.core.BaseActivity
 import com.example.foodapp.feature.adapterClass.FoodListAdapter
@@ -29,12 +26,14 @@ class MainActivity : BaseActivity(),FoodListView {
 
     override val isHomeUpButtonEnable: Boolean get()= false
 
-    private lateinit var presenter: FoodListPresenter
 
+lateinit var presenter : FoodListPresenter
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         presenter = FoodListPresenterImpl(this)
         presenter.getFoodList()
+
     }
 
 
@@ -47,24 +46,27 @@ class MainActivity : BaseActivity(),FoodListView {
     }
 
     override fun onFoodListRetrieveSuccess(foodList: MutableList<Food>) {
-      initFoodAdapter(foodList)
+        initAdapter(foodList)
+
+    }
+
+    private fun initAdapter(foodList: MutableList<Food>) {
+        val adapter = FoodListAdapter(foodList, object : ItemClickListener {
+            override fun onItemClick(position: Int) {
+               showToast("click item")
+            }
+
+        })
+        recyclerViewId.layoutManager= LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false)
+        recyclerViewId.adapter=adapter
+
     }
 
     override fun onFoodListRetrieveFailure(errorMessage: String) {
         showToast(errorMessage)
     }
 
-    private fun initFoodAdapter(foodList: MutableList<Food>) {
-        val adapter = FoodListAdapter(foodList, object : ItemClickListener {
-            override fun onItemClicked(position: Int) {
-                showToast("item clicked")
-            }
-        })
-        val  recyclerView = findViewById<RecyclerView>(R.id.recyclerViewId)
-        recyclerView.layoutManager = LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false)
-        recyclerView.adapter = adapter
 
-    }
 
 
 }
