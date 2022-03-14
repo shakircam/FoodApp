@@ -1,0 +1,97 @@
+  {
+  "questions": [
+    {
+      "question": "Capital of bangladesh?",
+      "answers": {
+        "A": "Dhaka",
+        "B": "Comilla",
+        "C": "Khulna",
+        "D": "Rangpur"
+      },
+      "questionImageUrl": null,
+      "correctAnswer": "A",
+      "score":10
+    },
+    {
+      "question": "Which river flows across the India-Bangladesh border?",
+      "answers": {
+        "A": "Hooghly River",
+        "B": "Ichamati River",
+        "C": "Brahmaputra Rive",
+        "D": "Suma Rive"
+      },
+      "questionImageUrl": null,
+      "correctAnswer": "B",
+      "score":20
+    },
+    {
+      "question": "How many rivers are there in Dhaka?",
+      "answers": {
+        "A": "Six rivers",
+        "B": "Three rivers",
+		"C": "Seven rivers",
+        "D": "Nine rivers"
+      },
+      "questionImageUrl": "null",
+      "correctAnswer": "A",
+      "score":20
+    },
+    {
+      "question": "Which city is called the Healthy City of Bangladesh?",
+      "answers": {
+        "A": "Chittagong",
+        "B": "Jessor",
+        "C": "Bogra",
+        "D": "Lalmonirhat"
+      },
+      "questionImageUrl": null,
+      "correctAnswer": "A",
+      "score":20
+    },
+    {
+      "question": "Wie ist das aktuelle Rating der CHECK24 App?",
+      "answers": {
+        "A": "Weniger als 1 Stern",
+        "B": "2 bis 3 Sterne",
+        "C": "3 bis 4 Sterne",
+        "D": "über 4 Sterne (fast 5)"
+      },
+      "correctAnswer": "D",
+      "score":100
+    },
+    {
+      "question": "When was the first election held in Bangladesh?",
+      "answers": {
+        "A": "4 March, 1973",
+        "B": "17 March, 1973",
+        "C": "5 March, 1973",
+        "D": "7 March, 1973"
+      },
+      "correctAnswer": "D",
+      "score":30
+    },
+    {
+      "question": "What is the national bird of Bangladesh?",
+      "answers": {
+        "A": "Oriental Magpie-robin",
+        "B": "Houbaropsis bengalensis",
+		 "C": "Gruidae Gruiformes",
+        "D": "Raphidae Columbiformes"
+     },
+      "correctAnswer": "A",
+      "score":30
+    },
+        {
+      "question": "What is the only river that originates and ends in Bangladesh?",
+      "answers": {
+        "A": "Kushiyara",
+        "B": "Ichamoti",
+        "C": "Sangu",
+        "D": "Matamohori"
+      },
+      
+      "correctAnswer": "C",
+      "score":30
+    }
+  ]
+}
